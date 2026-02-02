@@ -1,8 +1,10 @@
-n = int(input("Натуральное число n: "))
+n = int(input("Введите натуральное число n: "))
 
-product = 1
+count = 0
 
 for i in range(1, n + 1):
-    product = product + i
+    if i % 2 == 0:
+        print(i, end=" ")
+        count += 1
 
-    print(f"Количество выведенных чисел. {n} равно: {product}")
+print("\nКоличество чётных чисел:", count)
